@@ -1,0 +1,174 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-image: url(../images/cozinha2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: left;
+  font-style: italic;
+}
+#title {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: 400px;
+  margin-bottom: 10px;
+}
+#imgReceita {
+  border-radius: 10%;
+  margin-left: 200px;
+  margin-top: 10px;
+  width: 330px;
+  height: 175px;
+}
+
+iframe {
+  border-radius: 10%;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 330px;
+  height: 175px;
+}
+#descricaoReceita {
+  font-style: italic;
+  text-align: left;
+  margin-left: 200px;
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  margin-bottom: px;
+}
+p {
+  font-size: 25px;
+  text-align: left;
+  line-height: 5px;
+  margin-left: 200px;
+  color: white;
+}
+h3 {
+  font-size: 30px;
+  font-weight: none;
+  text-align: left;
+  line-height: 10px;
+  margin-left: 5px;
+  color: white;
+}
+header{
+ 
+  width: auto;
+  height: 25px;
+  /* background:rgba(211, 143, 95, 0.3); */
+  background:rgba(0, 0, 0, 0.5);
+ padding: auto;
+ 
+}
+header a {
+  color: white;
+  font-size: 20px;
+  padding-left: 50px;
+  text-decoration: none;
+  padding: 20px;
+  opacity:0.5;
+}
+header a:hover {
+  color: white;
+  opacity: 1;
+}
+header a:nth-child(1){
+  margin-left:180px;
+}
+section{
+  width: auto;
+  height: auto;
+  
+  
+  
+}
+section:nth-child(1){
+  margin-bottom: 20px;
+}
+#ingredientesMaisModo{
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+article{
+  width: 40%;
+  height:auto;
+  float: left;
+  
+}
+article:nth-child(1){
+  margin-left: 150px;
+}
+
+
+li {
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+footer {
+  margin-top:21px;
+  width: auto;
+  height: 25px;
+  /* background:rgba(211, 143, 95, 0.3); */
+  background:rgba(0, 0, 0, 0.5);
+ padding: auto;
+ 
+}
+
+footer a {
+  color: white;
+  font-size: 15px;
+  padding-left: 600px;
+}
+
+/* Css pgina Sobre o chefe */
+
+
+
+
+#descricaoChefe {
+  font-style: italic;
+  text-align: left;
+  margin-left: 350px;
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  margin-bottom: px;
+}
+
+#bruno {
+  border-radius: 50%;
+  margin-left: 410px;
+  margin-right: auto;
+  width:400px;
+  height:400px;
+  
+}
+
+#contato{
+  margin-top: 45px;
+  margin-left: 500px;
+  margin-bottom: 15px;
+}
+#contato a img{
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+
+/* cores e fundos */
