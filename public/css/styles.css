@@ -101,7 +101,7 @@ li > a > img {
   height: 150px;
   margin-bottom: 10px;
   border: 5px solid rgba(255, 255, 255, 0);
-  animation: up 500ms ease-in;
+  animation: up 1000ms ease-in;
 
   transform: opacity(15px);
 }
@@ -190,21 +190,27 @@ article:nth-child(1) {
 li {
   color: white;
 }
+article > a{
+  display: inline-block;
+  height: 125px;
+  padding-top: 50px;
+  /* margin-bottom:55px; */
+}
 footer {
   margin-top: 21px;
   width: auto;
   height: 25px;
   background: rgba(0, 0, 0, 0.5);
   padding: auto;
-
-  bottom: 0;
+  margin: auto;
+  text-align: center;
   width: 100%;
 }
 
 footer a {
   color: white;
   font-size: 15px;
-  padding-left: 600px;
+ 
 }
 /*----------------------------- chefe------------------- */
 .container {
@@ -231,5 +237,16 @@ footer a {
 .chefeHistoria > a {
   margin-left: 50%;
 }
-
-
+/* ___________________teste leo_________________________ */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    
+  }
+  h1{
+    line-height:50px;
+  }
+  footer{
+    background-color:black;
+  }
+}
