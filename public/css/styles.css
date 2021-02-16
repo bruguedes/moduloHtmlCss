@@ -1,35 +1,164 @@
-*{
-  box-sizing: border-box;
-}
-body {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,600&family=Roboto+Mono:ital,wght@0,700;1,700&display=swap");
+* {
   padding: 0;
   margin: 0;
   border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+
   background-image: url(../images/cozinha2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 1;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+header {
+  width: auto;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: auto;
+}
+header a {
+  font-size: 20px;
+  padding-left: 2.5%;
+  text-decoration: none;
+  opacity: 0.5;
+  color: white;
+}
+a:hover {
+  color: white;
+  opacity: 1;
+}
+header a:nth-child(1) {
+  padding-left: 15%;
 }
 h1 {
   text-transform: uppercase;
+  font-size: 50px;
   text-align: left;
   font-style: italic;
-}
-#title {
-  color: white;
-  font-size: 50px;
-  margin-top: 10px;
-  margin-left: 400px;
   margin-bottom: 10px;
 }
-#imgReceita {
+li,
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
+h2 {
+  font-style: italic;
+  color: gray;
+}
+.historia {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  margin-left: 15%;
+}
+
+.historia h2 {
+  width: 40%;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.historia h3 {
+  width: 40%;
+  font-size: 30px;
+  text-align: left;
+
+  margin-bottom: 20px;
+}
+.historia p {
+  width: 40%;
+  font-size: 20px;
+  text-align: left;
+  line-height: 25px;
+}
+.linkReceitas {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  margin-left: 15%;
+  overflow: hidden;
+}
+.linkReceitas ul > li {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  float: left;
+  padding-right: 5%;
+}
+/* ____________________________trasição links index receita imagem_______________________________________ */
+li > a > img {
+  border-radius: 50%;
+  width: 200px;
+  height: 150px;
+  margin-bottom: 10px;
+  border: 5px solid rgba(255, 255, 255, 0);
+  animation: up 500ms ease-in;
+
+  transform: opacity(15px);
+}
+li > a > img:hover {
+  border: 5px solid blueviolet;
+  transition: border 500ms ease;
+}
+ul > strong {
+  background-color: rgba(212, 172, 13, 05);
+}
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ____________________________trasição links index receita_______________________________________ */
+
+li > h3 {
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+li > h3 > a {
+  border-radius: 8px;
+  border: 1px solid rgba(137, 43, 226, 0);
+  background-color: rgba(137, 43, 226, 0);
+  padding: 16px;
+  color: white;
+}
+li > h3 > a:hover {
+  border-radius: 8px;
+  border: 1px solid blueviolet;
+  background-color: blueviolet;
+}
+
+/* -----------------------RECEITAS----------------------------------- */
+section {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 15%;
+}
+.imgMaisDescricao img {
   border-radius: 10%;
-  margin-left: 200px;
   margin-top: 10px;
   width: 330px;
   height: 175px;
 }
-
 iframe {
   border-radius: 10%;
   margin-left: 10px;
@@ -37,95 +166,39 @@ iframe {
   width: 330px;
   height: 175px;
 }
-#descricaoReceita {
-  font-style: italic;
-  text-align: left;
-  margin-left: 200px;
-  font-size: 30px;
-  color: white;
-  font-weight: normal;
-  margin-bottom: px;
+.imgMaisDescricao h3 {
+  width: 65%;
+  margin-top: 10px;
 }
-p {
-  font-size: 25px;
-  text-align: left;
-  line-height: 5px;
-  margin-left: 200px;
-  color: white;
-}
-h3 {
-  font-size: 30px;
-  font-weight: none;
-  text-align: left;
-  line-height: 10px;
-  margin-left: 5px;
-  color: white;
-}
-header{
- 
-  width: auto;
-  height: 25px;
-  /* background:rgba(211, 143, 95, 0.3); */
-  background:rgba(0, 0, 0, 0.5);
- padding: auto;
- 
-}
-header a {
-  color: white;
-  font-size: 20px;
-  padding-left: 50px;
-  text-decoration: none;
-  padding: 20px;
-  opacity:0.5;
-}
-header a:hover {
-  color: white;
-  opacity: 1;
-}
-header a:nth-child(1){
-  margin-left:180px;
-}
-section{
-  width: auto;
-  height: auto;
-  
-  
-  
-}
-section:nth-child(1){
-  margin-bottom: 20px;
-}
-#ingredientesMaisModo{
+
+.ingredientesMaisModo {
   overflow: hidden;
   width: auto;
   height: auto;
 }
 
-article{
-  width: 40%;
-  height:auto;
+article {
+  width: 50%;
+  height: auto;
   float: left;
-  
 }
-article:nth-child(1){
-  margin-left: 150px;
+article:nth-child(1) {
+  width: 40%;
+  padding-right: px;
 }
-
 
 li {
   color: white;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: bold;
 }
 footer {
-  margin-top:21px;
+  margin-top: 21px;
   width: auto;
   height: 25px;
-  /* background:rgba(211, 143, 95, 0.3); */
-  background:rgba(0, 0, 0, 0.5);
- padding: auto;
- 
+  background: rgba(0, 0, 0, 0.5);
+  padding: auto;
+
+  bottom: 0;
+  width: 100%;
 }
 
 footer a {
@@ -133,42 +206,30 @@ footer a {
   font-size: 15px;
   padding-left: 600px;
 }
-
-/* Css pgina Sobre o chefe */
-
-
-
-
-#descricaoChefe {
-  font-style: italic;
-  text-align: left;
-  margin-left: 350px;
-  font-size: 30px;
-  color: white;
-  font-weight: normal;
-  margin-bottom: px;
+/*----------------------------- chefe------------------- */
+.container {
+  margin-top: 3%;
+  align-items: center;
+  margin-left: 15%;
 }
-
-#bruno {
+.imgSobre > img {
   border-radius: 50%;
-  margin-left: 410px;
-  margin-right: auto;
-  width:400px;
-  height:400px;
-  
+  width: 30%;
+}
+.imgSobre .contato img {
+  margin-top: 2.5%;
+  margin-bottom: 0%;
+  border-radius: 20%;
+  width: 2%;
+  margin-block-end: 0.4%;
 }
 
-#contato{
-  margin-top: 45px;
-  margin-left: 500px;
-  margin-bottom: 15px;
+.chefeHistoria {
+  width: 80%;
+  line-height: 30px;
 }
-#contato a img{
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-  margin-bottom: 16px;
+.chefeHistoria > a {
+  margin-left: 50%;
 }
 
 
-/* cores e fundos */
