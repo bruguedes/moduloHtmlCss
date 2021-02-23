@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/css/styles.css" />
+    <link rel="stylesheet" href="../public/css/styles2.css" />
     <title>GastroAcre</title>
   </head>
   <body>
-    <header>
+    <nav>
       <a href="../index.html">Home</a>
       <a href="sobre.html">O Chefe</a>
-    </header>
+    </nav>
     <main>
-      <section class="imgMaisDescricao">
+      <section class="section-story">
         <h1><strong>Quibe de Arroz e Macaxeira</strong></h1>
-        <img src="../public/images/pratos/quibe.jpg" />
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/3cCOPHHNiew?start=19"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <h3>
+        <div class="img-iframe">
+         
+          <img src="../public/images/pratos/quibe.jpg" />
+          <iframe
+            src="https://www.youtube.com/embed/3cCOPHHNiew?start=19"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p>
           O quibe foi incorporado à gastronomia acreana com mudanças bastante
           significativas no seu preparo, como a massa de macaxeira, raiz
           bastante consumida em toda a Amazônia. A criatividade e paladar do
@@ -32,10 +33,11 @@
           do quibe. Em outros estados o quibe de macaxeira é conhecido como
           croquete de carne, mas em qualquer lanchonete e restaurantes do Acre
           os quibes de macaxeira e de arroz são sempre uma ótima pedida.
-        </h3>
+        </p>
       </section>
-      <section class="ingredientesMaisModo">
-        <article>
+
+      <section class="preparation-mode">
+        <article class="ingredients">
           <ul>
             <h3>Ingredientes:</h3>
             <strong>Quibe de Arroz:</strong>
@@ -56,7 +58,7 @@
             <li>sal a gosto</li>
           </ul>
         </article>
-        <article>
+        <article class="mode">
           <ol>
             <h3>Modo de Preparo</h3>
             <li>
@@ -88,13 +90,15 @@
               </p>
             </li>
           </ol>
-          <a href="../index.html"
-            ><img src="https://img.icons8.com/nolan/64/u-turn-to-left.png"
-          /></a>
+          
         </article>
+        
       </section>
+      <a href="../index.html"><img src="https://img.icons8.com/nolan/64/u-turn-to-left.png" /></a>
     </main>
-
-    <footer><a href="sobre.html">&copy; Copyright O CHEFE</a></footer>
+    <footer>
+      
+      <a href="./views/sobre.html">&copy; Copyright O CHEFE</a>
+    </footer>
   </body>
 </html>
