@@ -5,8 +5,7 @@
   border: 0;
   box-sizing: border-box;
 }
-html {
-}
+
 /* *************************SMARTPHONE ******************************************* */
 body {
   width: 100%;
@@ -51,6 +50,12 @@ main {
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 5vh;
+}
+main > a {
+  display: inline-block;
+  position: relative;
+  left: 40%;
+  margin-bottom: 5px;
 }
 
 section {
@@ -188,7 +193,6 @@ footer a {
 .boss-story {
   text-align: center;
 }
-
 /* *************************TABLET ******************************************* */
 
 @media (min-width: 500px) {
@@ -209,8 +213,9 @@ footer a {
   }
 
   main > a {
-    display: block;
-    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 40%;
   }
   section {
     margin-bottom: 2%;
@@ -259,6 +264,7 @@ footer a {
     border-radius: 10%;
     flex-grow: 1;
   }
+
   .preparation-mode {
     display: flex;
   }
@@ -327,13 +333,14 @@ footer a {
   /* ---------------------The Boss----------------------------- */
   .the-boss img {
     border-radius: 50%;
-    width: 30vw;
+    width: 60%;
+    margin-top: 2vh;
   }
 
   .contato img {
     margin-top: 1vh;
     margin-bottom: 0;
-    width: 2.5vw;
+    width: 6%;
   }
 }
 /* *************************Desktop******************************************* */
@@ -355,9 +362,20 @@ footer a {
     text-decoration: none;
   }
 
-  main > a {
-    display: block;
-    text-align: center;
+  main > a > img {
+    width: 70px;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 3;
+    right: 10px;
+    bottom: 12px;
+    margin-bottom: 15px;
+    background-color: white;
+  }
+
+  main a img:hover {
+    background-color: blueviolet;
   }
   section {
     margin-bottom: 2%;
@@ -516,27 +534,17 @@ footer a {
   /* ---------------------The Boss----------------------------- */
   .the-boss img {
     border-radius: 50%;
-    width: 30vw;
+    width: 40%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
   }
+
   .contato img {
     margin-top: 1vh;
     margin-bottom: 0;
-    width: 2.5vw;
+    width: 6%;
   }
-  .section-story a img {
-    width: 70px;
-    border: 5px solid black;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 3;
-    right: 10px;
-    bottom: 12px;
-    margin-bottom: 15px;
-    background-color: white;
-  }
-  .section-story a img:hover {
-    background-color: blueviolet;
-  }
+
   footer {
     background: rgba(0, 0, 0, 0.5);
     text-align: center;
